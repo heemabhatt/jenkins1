@@ -21,9 +21,9 @@ namespace TestWebApi.Controllers
         public ActionResult<Addition> GetAddition()
         {
             Addition addition = new Addition();
-            addition.Val1 = 2;
+            addition.Val1 = 1;
             addition.Val2 = 5;
-            addition.result = 2 + 5;
+            addition.result = 1 + 5;
             var result = JsonConvert.SerializeObject(addition);
             _logger.LogInformation("hello from controller ^^^^^^^^^^^^^");
                 return Ok(result);
